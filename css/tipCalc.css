@@ -1,0 +1,89 @@
+body {
+  background-color: #fffac5;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+#content {
+  background-color: #ffb562;
+  width: 40%;
+  margin: 0 auto 0;
+  clear: both;
+  border-radius: 200px;
+  border: 20px double #084cbb;
+}
+
+.title {
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 700;
+  /* text-shadow: 4px 4px 4px #aaa; */
+}
+
+.form-div {
+  display: block;
+  text-align: center;
+}
+
+form {
+  font-size: 1.3em;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0 auto 40px;
+}
+
+.bill_amt {
+  display: block;
+  margin: 0 auto 0px;
+}
+
+.tip-quality {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.group-number {
+  display: block;
+  margin: 0 auto 0px;
+}
+
+.calculate {
+  font-size: 1.4em;
+  font-weight: 700;
+  padding: 10px;
+  display: block;
+  margin: 0 auto 40px;
+  border: none;
+  border-radius: 25px;
+}
+
+.total-box {
+  display: none;
+  background-color: #fff;
+  margin: 20px auto 40px;
+  width: 60%;
+  border-radius: 70px;
+}
+
+.p1 {
+  margin-bottom: 0;
+}
+
+.tip-calculation {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #084cbb;
+}
+
+.reset {
+  width: 30%;
+  font-size: 1em;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  margin: 0 auto 40px;
+}

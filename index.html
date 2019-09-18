@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/tipCalc.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <main id="content">
+      <h1 class="title">
+        Tip Calculator
+      </h1>
+
+      <div class="form-div">
+        <form id="tip-form">
+          Bill Total<br/>
+          <input type="number" min="1" step="any" class="bill_amt" name="bill-total"/><br />
+
+          Service Quality:
+          <select name="tips" class="tip-quality">
+            <option value="5">5% Poor </option>
+            <option value="10">10% Bad </option>
+            <option value="15">15% Good </option>
+            <option value="20">20% Very Good </option>
+            <option value="25">25% Excellent </option>
+            <option value="30">30% Outstanding </option>
+          </select>
+
+          Party size: <br />
+          <input type="number" min="1" class="group-number" name="group-size" />
+        </form>
+        <button id="calculate-button" class="calculate">Calculate</button>
+        <div class="total-box">
+          <p class="p1">
+            Amount of tip per person:
+          </p>
+          <p class="tip-calculation">
+            $0
+          </p>
+        </div>
+        <button id="reset-button" class="reset" >Reset</button>
+      </div>
+
+    </main>
+
+    <script type="text/javascript" src="js/tipCalc.js"></script>
+  </body>
+</html>
