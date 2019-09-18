@@ -15,10 +15,11 @@
       <div class="form-div">
         <form id="tip-form">
           Bill Total<br/>
-          <input type="number" min="1" step="any" class="bill_amt" name="bill-total"/><br />
+          <input type="number" min="1" step="any" class="bill_amt" placeholder="enter bill total..." name="bill-total"/><br />
 
           Service Quality:
           <select name="tips" class="tip-quality">
+            <option value="" disabled selected hidden>Please Choose...</option>
             <option value="5">5% Poor </option>
             <option value="10">10% Bad </option>
             <option value="15">15% Good </option>
@@ -27,8 +28,8 @@
             <option value="30">30% Outstanding </option>
           </select>
 
-          Party size: <br />
-          <input type="number" min="1" class="group-number" name="group-size" />
+          Size of party splitting tip: <br />
+          <input type="number" min="1" class="group-number" name="group-size" placeholder="enter number of people..."/>
         </form>
         <button id="calculate-button" class="calculate">Calculate</button>
         <div class="total-box">
