@@ -19,20 +19,22 @@ function billTotal() {
   }
 
   if(tipCalc) {
-  document.getElementsByClassName("tip-calculation")[0].innerHTML = "$" + tipCalc.toFixed(2);
+  document.getElementsByClassName("tip-calculation")[0].innerHTML = '$'+ tipCalc.toFixed(2);
 } else {
   console.log("no data entered for tip");
 }
-  document.getElementsByClassName("total-box")[0].style.display = "block";
+  document.getElementsByClassName("total-box")[0].style.display = 'block';
   console.log("visible");
+  document.getElementById('content').style.height = '700px';
 }
 
 document.getElementById("calculate-button").addEventListener('click', billTotal);
 
 function resetForm() {
     document.getElementById("tip-form").reset();
-    document.getElementsByClassName("tip-calculation")[0].innerHTML = "$"+ 0;
-    document.getElementsByClassName("total-box")[0].style.display = "none";
+    document.getElementsByClassName("tip-calculation")[0].innerHTML = '$'+ 0;
+    document.getElementsByClassName("total-box")[0].style.display = 'none';
+    document.getElementById('content').style.height = '600px';
 }
 
 document.getElementById("reset-button").addEventListener("click", resetForm);
