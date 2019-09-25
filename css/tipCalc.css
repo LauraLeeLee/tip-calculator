@@ -22,16 +22,16 @@ body {
 
 #content {
   background-color: #ffb562;
-  width: 40%;
-  height: 600px;
-  margin: 0 auto 0;
-  clear: both;
+  width: 600px;
+  height: 75vh;
+  overflow-y: auto;
+  margin: 5% auto 0;
   border-radius: 200px;
   border: 20px double #084cbb;
 }
 
 .title {
-  margin-top: 30px;
+  margin-top: 20px;
   padding-top: 20px;
   text-align: center;
   color: #084cbb;
@@ -46,7 +46,7 @@ body {
 }
 
 form {
-  font-size: 1.3em;
+  font-size: 1.25em;
   font-weight: 600;
   display: inline-block;
   margin: 0 auto 40px;
@@ -112,4 +112,43 @@ input, select {
   border: none;
   border-radius: 30px;
   margin: 0 auto 40px;
+}
+
+/*=======Media Queries==========*/
+
+@media (max-height: 535px) {
+  #content {
+    height: 90vh;
+  }
+}
+
+@media (min-height: 800px) {
+  #content {
+    height: 70vh;
+
+  }
+}
+
+@media (max-width: 599px) {
+  #content {
+    width: 80%;
+  }
+
+  .title {
+    margin-top: 10%;
+    font-size: 1.75em;
+  }
+
+  form {
+    margin-bottom: 20px;
+  }
+
+  .calculate {
+    margin-bottom: 10px;
+  }
+
+  .total-box {
+    width: 90%;
+  }
+
 }
